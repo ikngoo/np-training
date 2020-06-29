@@ -57,8 +57,10 @@ function onEachFeature(feature, layer) {
         layer.bindPopup(
 		"<b><a href=\""+feature.properties.院所明細查詢+" \"target=\"_blank\"></b>" + 
 		feature.properties.醫院名稱 + "</a>" + "<br>"
-         +"<b>科別：</b>"+ feature.properties.科別  + "<br>"
-         +"<b>組別：</b>"+ feature.properties.組別  + "<br>"
+         +"<b>專師訓練科別：</b>"+ feature.properties.科別  + "<br>"
+         +"<b>專師訓練組別：</b>"+ feature.properties.組別  + "<br>"
+         +"<b>訓練醫院認定年度：</b>"+ feature.properties.認定年度  + "<br>"
+         +"<b>訓練醫院資格效期：</b>"+ feature.properties.資格效期  + "<br>"
          + feature.properties.地址  + "<br>"
          + "<a href=\"tel:+886"+feature.properties.電話+"\">" + feature.properties.電話 + "</a>"   + "<br>"
 		 + feature.properties.權屬別  + "<br>"
