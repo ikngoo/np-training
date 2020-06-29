@@ -55,7 +55,7 @@ function onEachFeature(feature, layer) {
     // does this feature have a property named popupContent?
     if (feature.properties && feature.properties.醫院名稱) {
         layer.bindPopup(
-		"<b><a href=\""+feature.properties.院所明細查詢+"\"></b>" + 
+		"<b><a href=\""+feature.properties.院所明細查詢+" \"target=\"_blank\"></b>" + 
 		feature.properties.醫院名稱 + "</a>" + "<br>"
          +"<b>科別：</b>"+ feature.properties.科別  + "<br>"
          +"<b>組別：</b>"+ feature.properties.組別  + "<br>"
