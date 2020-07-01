@@ -45,6 +45,8 @@
 }).setView([23, 121], 6);
  L.tileLayer.wms('http://wms.nlsc.gov.tw/wms', {
     layers: 'EMAP16',
+	attribution: 'TGOS &copy; <a href="http://wms.nlsc.gov.tw/wms">內政部</a>, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ',
     format: 'image/png',
     transparent: true,
     continuousWorld : true,
