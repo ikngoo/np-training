@@ -78,11 +78,6 @@ function onEachFeature(feature, layer) {
   var controlSearch = new L.Control.Search({layer: markers, initial: false, position:'topleft'});
 map.addControl( controlSearch );
 
-	$('#textsearch').on('keyup', function(e) {
-
-		controlSearch.searchText( e.target.value );
-
-	})
 
 markers.addLayer(alltypes).addTo(map);
 
