@@ -104,8 +104,12 @@ markers.addLayer(alltypes).addTo(map);
 
 //... adding data in alltypes ...
 	var controlSearch = new L.Control.Search({layer: alltypes,propertyName: '醫院名稱',buildTip: function(text, val) {
-			var type = val.layer.feature.properties.組別;
-			return '<a href="#" class="'+type+'">'+text+'<b>'+type+'</b></a>';
+			var type1 = val.layer.feature.properties.組別;
+			var type2 = val.layer.feature.properties.科別;
+    if (type1 == null) {
+			return '<a href="#" class="'+type2+'">'+text+'<b>'+type2+'</b></a>';
+			}
+    else {return '<a href="#" class="'+type1+'">'+text+'<b>'+type1+'</b></a>';} 
 		},zoom: 17, initial: false, position:'topleft',textPlaceholder: '搜尋名稱'
    });
    
